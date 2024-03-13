@@ -129,7 +129,7 @@ def main():
         f.write(data)
     header, data = open_csv("students_password.csv")
     header.append("login")
-    header.append("data")
+    header.append("password")
     for user in data:
         user["login"] = generate_login(user["Name"])
         user["passowrd"] = generate_password()
